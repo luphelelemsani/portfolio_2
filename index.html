@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta
+      name="description"
+      content="Andile Msani  is a Zulu web designer and developer. I find the web as a heavenly place filled with endless
+opportunities, I would love to see more people using it to better
+ their lives."
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Andile Msani | Web Dev</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./images/mylogo.svg" alt="Andile's Logo" class="logo" />
+        <nav>
+          <a href="#" class="hide-desktop">
+            <i
+              alt="menu button"
+              class="fa fa-bars"
+              id="menu"
+              aria-hidden="true"
+            ></i>
+          </a>
+
+          <ul class="show-desktop hide-mobile" id="nav">
+            <li id="exit" class="exit-btn hide-desktop">
+              <img src="/images/close.svg" alt="exit menu" />
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <img src="images/oopn.jpg" alt="3d bubbles" class="bubbles" />
+        <h1>Web Development for the Modern Era</h1>
+        <p class="subhead">
+          Team up with the best talent at an affordable rate.
+        </p>
+        <img
+          src="images/arrow-circle-down.svg"
+          alt="scroll down"
+          class="scroll hide-mobile show-desktop"
+        />
+      </section>
+    </div>
+    <div class="grey-container">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="images/pie-chart.svg" alt="problem solver" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+              quaerat nemo est vero laudantium ab sed dolorem, necessitatibus
+            </p>
+          </li>
+          <li>
+            <img src="images/layers.svg" alt="projects" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+              quaerat nemo est vero laudantium ab sed dolorem, necessitatibus
+            </p>
+          </li>
+          <li>
+            <img src="images/trending-up.svg" alt="skills" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur
+              quaerat nemo est vero laudantium ab sed dolorem, necessitatibus
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="black-container">
+      <div class="container">
+        <figure>
+          <ul>
+            <li>
+              <img src="/images/andile.jpg" alt="Andile  Msani picture" />
+              <blockquote>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Pariatur quaerat nemo est vero laudantium ab sed dolorem,
+                necessitatibus
+              </blockquote>
+              <figcaption>- Andile Msani</figcaption>
+            </li>
+            <li>
+              <img src="/images/andile.jpg" alt="Andile  Msani picture" />
+              <blockquote>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Pariatur quaerat nemo est vero laudantium ab sed dolorem,
+                necessitatibus
+              </blockquote>
+              <figcaption>- Andile Msani</figcaption>
+            </li>
+          </ul>
+        </figure>
+      </div>
+    </div>
+    <div class="container">
+      <h2>Send me an email</h2>
+      <a href="mailto:andilemaashmsani@gmail.com" class="cta">Email Me</a>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <a href="#"
+            ><img src="/images/amlogo.svg" class="logo" alt="logo"
+          /></a>
+          <p class="address">
+            51 5th Avenue,<br />Belgravia<br />Cape Town,<br />7764
+          </p>
+          <ul class="footer-links">
+            <li>
+              <a href="https://github.com/luphelelemsani"
+                ><i class="fa fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://dribbble.com/andile_m"
+                ><i class="fa fa-dribbble"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/msani_andile"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/andile-msani-2b7700133/"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const menu = document.getElementById("menu");
+    const nav = document.getElementById("nav");
+    const exit = document.getElementById("exit");
+
+    menu.addEventListener("click", function (e) {
+      nav.classList.toggle("hide-mobile");
+      e.preventDefault();
+    });
+
+    exit.addEventListener("click", function (e) {
+      nav.classList.add("hide-mobile");
+      e.preventDefault();
+    });
+  </script>
+</html>
